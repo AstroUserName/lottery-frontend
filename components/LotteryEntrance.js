@@ -54,10 +54,10 @@ export default function LotteryEntrance() {
     })
 
     async function getWinner() {
-        const provider = new ethers.providers.JsonRpcProvider()
+        const provider = new ethers.providers.AlchemyProvider(5, process.env.PRIVATE_KEY)
         const contract = new ethers.Contract(contractAddresses, abi, provider)
 
-        contract.on("WinnerPicked", (from, to, value, event) => {
+        contract.once("WinnerPicked", (from, to, value, event) => {
             let transferEvent = {
                 from,
                 to,
@@ -72,7 +72,6 @@ export default function LotteryEntrance() {
         const entranceFeeFromCall = (await getEntranceFee()).toString()
         const numPlayersFromCall = (await getPlayersNumber()).toString()
         const recentWinnerFromCall = await getRecentWinner()
-        console.log(recentWinnerFromCall)
         setEntranceFee(entranceFeeFromCall)
         setNumberOfPlayers(numPlayersFromCall)
         setRecentWinner(recentWinnerFromCall)
@@ -106,7 +105,6 @@ export default function LotteryEntrance() {
     const handleSuccess = async (tx) => {
         try {
             const txReceipt = await tx.wait(1)
-            console.log(txReceipt, " Тут можно получить имя эвента")
             updateUIValues()
             handleNewNotification(tx)
         } catch (error) {
