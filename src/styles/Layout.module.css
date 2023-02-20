@@ -5,6 +5,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    background-image: linear-gradient(to bottom right, #ff61d2, #fe9090);
 }
 
 .main {

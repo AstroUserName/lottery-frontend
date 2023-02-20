@@ -132,7 +132,7 @@ const EnterRaffle = () => {
                             className={enterRaffleStyles.enterRaffle}
                             disabled={isLoading || isFetching}
                         >
-                            Enter Raffle
+                            Участвовать
                         </button>
 
                         <a
@@ -140,7 +140,7 @@ const EnterRaffle = () => {
                             href="https://goerlifaucet.com/"
                             target="_blank"
                         >
-                            Get Testnet ETH
+                            Получить тестовые эфиры ETH
                         </a>
                     </div>
                 ) : (
@@ -152,8 +152,9 @@ const EnterRaffle = () => {
                                     src="../warning-icon.png"
                                 />
                             </span>
-                            Chain not supported. Select Ethereum Göerli (5) or
-                            Hardhat-Localhost (31337).
+                            Надо кошель подключить. Видишь в правом углу кнопка?
+                            Select Ethereum Göerli (5) or Hardhat-Localhost
+                            (31337) with <b>MetaMask</b>.
                         </p>
                     </div>
                 )}

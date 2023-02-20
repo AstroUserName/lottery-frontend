@@ -154,6 +154,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
 }
 
 .grey {
@@ -206,6 +207,7 @@
     border: 1px solid #e8e8e8;
     line-height: 1.4em;
     text-align: center;
+    background-image: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
 }
 
 .mainLogo {
@@ -224,6 +226,7 @@
     box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.12);
     font-weight: 600;
     text-align: center;
+    background-image: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
 }
 
 .logosContainer {
@@ -308,7 +311,7 @@
 }
 
 .animationOpen {
-    animation: open 1s infinite alternate;
+    animation: open 0.5s infinite alternate;
     margin-left: 0.2em;
 }
 

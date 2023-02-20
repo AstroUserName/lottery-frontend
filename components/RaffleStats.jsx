@@ -23,9 +23,9 @@ function RaffleStats({
                 />
             </a>
             <p>
-                Lottery Status:{" "}
+                Статус лотереи:{" "}
                 <span className={enterRaffleStyles.grey}>
-                    {raffleState === "0" ? "Open" : "Close"}
+                    {raffleState === "0" ? "Открыт" : "Закрыт"}
                 </span>{" "}
                 <span
                     className={
@@ -37,25 +37,25 @@ function RaffleStats({
                 ></span>
             </p>
             <p>
-                Entrance Fee:{" "}
+                Входной платеж:{" "}
                 <span className={enterRaffleStyles.grey}>
                     {entranceFee} ETH
                 </span>
             </p>
             <p>
-                Current Pool:{" "}
+                Текущий баланс:{" "}
                 <span className={enterRaffleStyles.grey}>
                     {numberOfPlayers * Number(entranceFee)} ETH
                 </span>
             </p>
             <p>
-                Number of players:{" "}
+                Количество участников:{" "}
                 <span className={enterRaffleStyles.grey}>
                     {numberOfPlayers}
                 </span>
             </p>
             <p>
-                Most recent winner:{" "}
+                Недавний победитель:{" "}
                 <span className={enterRaffleStyles.grey}>{recentWinner}</span>
             </p>
         </div>

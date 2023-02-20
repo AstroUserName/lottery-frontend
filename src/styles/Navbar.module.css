@@ -3,6 +3,7 @@
     display: flex;
     justify-content: space-between;
     align-items: baseline;
+    background-image: linear-gradient(to bottom right, #ff61d2, #fe9090);
 }
 
 .logo {

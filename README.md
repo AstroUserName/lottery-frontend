@@ -2,12 +2,7 @@
 
 ### ⚡️⚡️ Live Demo: https://plain-flower-7694.on.fleek.co/
 
-### ⚡️⚡️ ipfs://QmSSgn6s6yp8Zxy4Fv9AustXvVNV1MBQ6SJpHdx5Y349B1
-
 ### ⚡️⚡️ Check the smart contract [here](https://github.com/pacelliv/smartcontract-lottery).
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
 ## Getting Started
 
 First, run the development server:

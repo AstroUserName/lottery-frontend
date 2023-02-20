@@ -9,8 +9,7 @@ const Home = () => {
                     The Decentralized Lottery of the Web3
                 </h1>
                 <p className={homeStyles.subtitle}>
-                    Connect your wallet <br />
-                    and test your luck
+                    Подключи свой кошелек <br />и испытай удачу
                 </p>
                 <div className={homeStyles.sectionEnter}>
                     <EnterRaffle />
