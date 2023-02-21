@@ -17,7 +17,7 @@ const Meta = ({ title, keywords, description }) => {
             <link
                 rel="preconnect"
                 href="https://fonts.gstatic.com"
-                crossOrigin
+                crossOrigin="true"
             />
             <link
                 href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inter+Tight:wght@400;500;600;700;900&family=Inter:wght@400;500;600;700;900&family=Megrim&display=swap"

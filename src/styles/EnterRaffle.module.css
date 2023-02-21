@@ -61,7 +61,7 @@
     margin: 0 auto;
     background-color: rgb(235, 245, 248);
     border-radius: 7px;
-    padding: 0.4em 0em 1em 0em;
+    padding: 0.4em;
     width: 96%;
     font-size: 0.85rem;
     display: flex;
@@ -70,7 +70,6 @@
 }
 
 .warningMessage {
-    position: relative;
     bottom: 100px;
     margin: 0;
     padding-top: 0.2em;
@@ -121,7 +120,7 @@
     }
 }
 
-@media (min-width: 880px) {
+/* @media (min-width: 880px) {
     .warningContainer {
         font-size: 1rem;
     }
@@ -129,7 +128,7 @@
         position: relative;
         bottom: -11px;
     }
-}
+} */
 
 /* ***************************** */
 

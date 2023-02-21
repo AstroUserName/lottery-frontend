@@ -153,8 +153,9 @@ const EnterRaffle = () => {
                                 />
                             </span>
                             Надо кошель подключить. Видишь в правом углу кнопка?
-                            Select Ethereum Göerli (5) or Hardhat-Localhost
-                            (31337) with <b>MetaMask</b>.
+                            Выбери сеть Ethereum Göerli (chainId = 5) или
+                            Hardhat-Localhost (chainId = 31337) with{" "}
+                            <b>MetaMask</b>.
                         </p>
                     </div>
                 )}
