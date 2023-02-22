@@ -8,7 +8,7 @@
 }
 
 .cta {
-    width: 90%;
+    /* width: 90%; */
     margin: 0 auto;
 }
 
@@ -23,7 +23,7 @@
     color: white;
     border-radius: 7px;
     margin: 0 auto 1.2em auto;
-    width: 65%;
+    /* width: 75%; */
     transition: all 0.5s ease;
     border: #0066ff solid 1px;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
@@ -33,6 +33,32 @@
 .enterRaffle:hover {
     color: #1c1c1c;
     background-color: white;
+}
+
+.enterRaffle:disabled {
+    opacity: 0.5;
+    color: initial;
+    background-color: initial;
+}
+
+.changeStatus {
+    color: #1c1c1c;
+    background: linear-gradient(to bottom right, #ff512f, #dd2476);
+    border: none;
+}
+
+.changeStatus:hover {
+    background: greenyellow;
+}
+
+.manualActivate {
+    color: #1c1c1c;
+    background: linear-gradient(to bottom right, #0100ec, #fb36f4);
+    border: none;
+}
+
+.manualActivate:hover {
+    background: greenyellow;
 }
 
 .getEth {
@@ -46,7 +72,7 @@
     color: #696969;
     border-radius: 7px;
     width: 65%;
-    margin: 0 auto;
+    margin: 0 auto 1.2em auto;
     transition: all 0.2s ease-out;
     outline: none;
     box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
@@ -115,9 +141,9 @@
 }
 
 @media (min-width: 600px) {
-    .cta {
+    /* .cta {
         width: 475px;
-    }
+    } */
 }
 
 /* @media (min-width: 880px) {

@@ -22,6 +22,7 @@
     { "type": "error", "name": "OnlySimulatedBackend", "inputs": [] },
     { "type": "error", "name": "Raffle__NotEnoughETHEntered", "inputs": [] },
     { "type": "error", "name": "Raffle__NotOpen", "inputs": [] },
+    { "type": "error", "name": "Raffle__NotOwner", "inputs": [] },
     { "type": "error", "name": "Raffle__TransferFailed", "inputs": [] },
     {
         "type": "error",
@@ -32,6 +33,7 @@
             { "type": "uint256", "name": "raffleState" }
         ]
     },
+    { "type": "error", "name": "Raffle__UserExist", "inputs": [] },
     {
         "type": "event",
         "anonymous": false,
@@ -56,7 +58,6 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [{ "type": "bytes" }],
         "outputs": [
             { "type": "bool", "name": "upkeepNeeded" },
@@ -69,7 +70,6 @@
         "constant": false,
         "stateMutability": "payable",
         "payable": true,
-        "gas": 29000000,
         "inputs": [],
         "outputs": []
     },
@@ -79,9 +79,17 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [],
         "outputs": [{ "type": "uint256" }]
+    },
+    {
+        "type": "function",
+        "name": "getExistaceOfPlayer",
+        "constant": true,
+        "stateMutability": "view",
+        "payable": false,
+        "inputs": [{ "type": "address", "name": "adr" }],
+        "outputs": [{ "type": "bool" }]
     },
     {
         "type": "function",
@@ -89,7 +97,6 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [],
         "outputs": [{ "type": "uint256" }]
     },
@@ -99,7 +106,6 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [],
         "outputs": [{ "type": "uint256" }]
     },
@@ -109,7 +115,6 @@
         "constant": true,
         "stateMutability": "pure",
         "payable": false,
-        "gas": 29000000,
         "inputs": [],
         "outputs": [{ "type": "uint256" }]
     },
@@ -119,7 +124,6 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [],
         "outputs": [{ "type": "uint256" }]
     },
@@ -129,7 +133,6 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [{ "type": "uint256", "name": "index" }],
         "outputs": [{ "type": "address" }]
     },
@@ -139,7 +142,6 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [],
         "outputs": [{ "type": "uint8" }]
     },
@@ -149,7 +151,6 @@
         "constant": true,
         "stateMutability": "view",
         "payable": false,
-        "gas": 29000000,
         "inputs": [],
         "outputs": [{ "type": "address" }]
     },
@@ -158,7 +159,6 @@
         "name": "performUpkeep",
         "constant": false,
         "payable": false,
-        "gas": 29000000,
         "inputs": [{ "type": "bytes" }],
         "outputs": []
     },
@@ -167,11 +167,26 @@
         "name": "rawFulfillRandomWords",
         "constant": false,
         "payable": false,
-        "gas": 29000000,
         "inputs": [
             { "type": "uint256", "name": "requestId" },
             { "type": "uint256[]", "name": "randomWords" }
         ],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "setMaualActivation",
+        "constant": false,
+        "payable": false,
+        "inputs": [],
+        "outputs": []
+    },
+    {
+        "type": "function",
+        "name": "setRaffleState",
+        "constant": false,
+        "payable": false,
+        "inputs": [],
         "outputs": []
     }
 ]

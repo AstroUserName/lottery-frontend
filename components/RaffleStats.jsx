@@ -55,6 +55,10 @@ function RaffleStats({
                 </span>
             </p>
             <p>
+                Необходимое кол-во участников:
+                <span className={enterRaffleStyles.grey}> 5</span>
+            </p>
+            <p>
                 Недавний победитель:{" "}
                 <span className={enterRaffleStyles.grey}>{recentWinner}</span>
             </p>

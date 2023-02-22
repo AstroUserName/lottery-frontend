@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
             <div className={footerStyles.descriptionWrapper}>
                 <p className={footerStyles.description}>Telegram</p>
-                <a href="https://t.me/super_boss" target="_blank">
+                <a href="https://t.me/soundsverybad" target="_blank">
                     <img src="../images/telegram-logo.png" />
                 </a>
             </div>
